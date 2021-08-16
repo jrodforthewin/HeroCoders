@@ -1,13 +1,11 @@
-const firstLetterIsCaps = (string) => {
-  if (!string) {
-    //string is empty
-    console.log("string is empty");
+const firstLetterIsCaps = (expr) => {
+  if (!expr) {
+    // expr is empty
     return false;
   }
   const regex = /^[A-Z]/;
-  const itIsCaps = regex.exec(string) !== null;
+  const itIsCaps = regex.exec(expr) !== null;
 
-  console.log(`Does ${string} begin with a capital letter? ${itIsCaps}`);
   return itIsCaps;
 };
 
