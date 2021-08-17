@@ -1,6 +1,5 @@
 const firstLetterIsCaps = (expr) => {
-  if (!expr) {
-    // expr is empty
+  if (!expr || typeof expr !== 'string') {
     return false;
   }
   const regex = /^[A-Z]/;

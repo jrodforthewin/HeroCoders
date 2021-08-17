@@ -13,4 +13,8 @@ describe('Testing first letters', () => {
   test('1234 will be false', () => {
     expect(firstLetterIsCaps(1234)).toBe(false);
   });
+  test('Sending an object will make it false', () => {
+    const cars = ['Saab', 'Volvo', 'BMW'];
+    expect(firstLetterIsCaps(cars)).toBe(false);
+  });
 });

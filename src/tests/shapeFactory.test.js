@@ -16,4 +16,8 @@ describe('Circle Tests', () => {
   test('Passing in two arguments', () => {
     expect(circleArea(1, 2)).toBe(3.141592653589793);
   });
+  test('Sending an object will make it 0', () => {
+    const cars = ['Saab', 'Volvo', 'BMW'];
+    expect(circleArea(cars)).toBe(0);
+  });
 });
